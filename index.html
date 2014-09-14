@@ -5,15 +5,23 @@
 		<title>Dark Matter Drifters</title>
 	</head>
 	<body>
-		<audio id='slap'>
-			<source src='slap.mp3'/>
-		</audio>
+		<audio preload='auto' id='slap1'><source src='slap1.mp3'/></audio>
+		<audio preload='auto' id='slap2'><source src='slap2.mp3'/></audio>
+		<audio preload='auto' id='slap3'><source src='slap3.mp3'/></audio>
+		<audio preload='auto' id='slap4'><source src='slap4.mp3'/></audio>
+		<audio preload='auto' id='slap5'><source src='slap5.mp3'/></audio>
+		<audio preload='auto' id='slap6'><source src='slap6.mp3'/></audio>
+		<audio preload='auto' id='slap7'><source src='slap7.mp3'/></audio>
+		<audio preload='auto' id='slap8'><source src='slap8.mp3'/></audio>
+		<audio preload='auto' id='slap9'><source src='slap9.mp3'/></audio>
 		<div>
 			<img id='bag' class='slappee' src='bag.jpg'/>
 		</div>
 	</body>
 	<footer></footer>
 	<script type='text/javascript'>
-		document.getElementById('bag').addEventListener('mouseover', function() { document.getElementById('slap').play(); } );
+		document.getElementById('bag').addEventListener('mouseover', function() {
+			document.getElementById('slap' + Math.ceil(Math.random() * 9)).play();
+		} );
 	</script>
 </html>
