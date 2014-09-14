@@ -3,10 +3,6 @@ div {
 	text-align:center
 }
 
-#bag  {
-	padding-top: 100px;
-}
-
 body {
 	cursor: url('slap.ico'), auto;
 	height:100%;
@@ -56,7 +52,7 @@ body {
 	100% { -moz-transform: translate(2px, -5px) rotate(-2deg); }
 }
 
-.slappee:hover, .slappee:focus {
+#bag:hover, #bag:focus {
 	-webkit-animation-name: slap;
 	-webkit-animation-duration: 0.5s;
 	-webkit-transform-origin:50% 50%;
@@ -76,6 +72,7 @@ body {
 	-moz-animation-timing-function: linear;
 }
 
-.slappee {
-	display:inline-block
+#bag {
+	display:inline-block;
+	padding-top: 100px;
 }
