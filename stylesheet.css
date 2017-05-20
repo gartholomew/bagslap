@@ -55,24 +55,30 @@ body {
 #bag:hover, #bag:focus {
 	-webkit-animation-name: slap;
 	-webkit-animation-duration: 0.5s;
-	-webkit-transform-origin:50% 50%;
+	-webkit-transform-origin: 50% 50%;
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-timing-function: linear;
-	
+
 	-ms-animation-name: slap;
 	-ms-animation-duration: 0.5s;
-	-ms-transform-origin:50% 50%;
+	-ms-transform-origin: 50% 50%;
 	-ms-animation-iteration-count: 1;
 	-ms-animation-timing-function: linear;
-		
+
 	-moz-animation-name: slap;
 	-moz-animation-duration: 0.5s;
-	-moz-transform-origin:50% 50%;
+	-moz-transform-origin: 50% 50%;
 	-moz-animation-iteration-count: 1;
 	-moz-animation-timing-function: linear;
 }
 
 #bag {
-	display:inline-block;
+	display: inline-block;
 	padding-top: 100px;
+}
+
+#counter {
+	position: fixed;
+	bottom: 0;
+	text-align: center;
 }

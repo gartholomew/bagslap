@@ -17,6 +17,9 @@
 		<div>
 			<img id='bag' src='bag.jpg'/>
 		</div>
+		<div>
+			<span id='counter'></span>
+		</div>
 	</body>
 	<footer></footer>
 	<script type='text/javascript'>
@@ -26,6 +29,7 @@
 			if (slapCount === 10)
 				this.setAttribute('src', 'bagdrip.jpg');
 			document.getElementById('slap' + Math.ceil(Math.random() * 9)).play();
+			document.getElementById('counter').textContent = String(slapCount);
 		} );
 	</script>
 </html>
